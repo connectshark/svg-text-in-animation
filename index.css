@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Roboto Mono', monospace;
+}
+body{
+  font-size: 7rem;
+  font-weight: bold;
+  background-color: #022b3a;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+@keyframes flash {
+  0% {
+    stroke-dashoffset: 0%;
+  }
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+.text-copy{
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 2px;
+  stroke-dashoffset: 0%;
+  animation: flash infinite linear 5s;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #facc15;
+  animation-delay: -1s;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #f9fafb;
+  animation-delay: -2s;
+}
+.text-copy:nth-child(3) {
+  stroke: #f87171;
+  animation-delay: -3s;
+}
+.text-copy:nth-child(4) {
+  stroke: #0284c7;
+  animation-delay: -4s;
+}
